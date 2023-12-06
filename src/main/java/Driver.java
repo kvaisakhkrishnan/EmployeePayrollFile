@@ -13,6 +13,7 @@ public class Driver {
 //        createDirectory("My Directory");
 //        listFilesDirectory("/");
         employeeList.employeePayroll.get(0).calculatePayRoll("payroll.txt");
+        employeeList.printPayroll("payroll.txt");
     }
     public static void checkFileExists(String fileName){
         Path path = Path.of(fileName);
