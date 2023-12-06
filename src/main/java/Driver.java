@@ -5,15 +5,16 @@ import java.nio.file.Path;
 public class Driver {
     public static void main(String[] args) {
         EmployeeList employeeList = new EmployeeList();
-         employeeList.addEmployee();
+        // employeeList.addEmployee();
 //        checkFileExists("tempFile.txt");
 //        checkFileExists("tempFile.txt");
 //        deleteFile("noFile.txt");
 //        deleteFile("tempFile.txt");
 //        createDirectory("My Directory");
 //        listFilesDirectory("/");
-        employeeList.employeePayroll.get(0).calculatePayRoll("payroll.txt");
+        //employeeList.employeePayroll.get(0).calculatePayRoll("payroll.txt");
         employeeList.printPayroll("payroll.txt");
+        employeeList.countPayroll("payroll.txt");
     }
     public static void checkFileExists(String fileName){
         Path path = Path.of(fileName);

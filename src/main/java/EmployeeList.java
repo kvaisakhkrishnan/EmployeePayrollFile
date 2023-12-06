@@ -34,5 +34,20 @@ public class EmployeeList {
        }
     }
 
+    public void countPayroll(String filePath){
+        Path path = Path.of(filePath);
+        try{
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            int count = 0;
+            while(reader.readLine() != null){
+                count += 1;
+            }
+            System.out.println("No Of Rows: " + count);
+        }
+        catch(Exception err){
+            System.out.println("Exception Caught " + err.getMessage());
+        }
+    }
+
 
 }
